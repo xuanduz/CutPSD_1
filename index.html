@@ -353,21 +353,21 @@
     var nextBtn = temp.slice(0,9);
     var counter = Number(temp.slice(9,10));
     
-    // setInterval(function(){
-    //     let removeBtn = document.getElementById(nextBtn + counter);
-    //     let removeInput = document.getElementById('radio' + counter);
-    //     if(removeBtn.classList.contains('btn-checked')){
-    //         removeBtn.classList.remove('btn-checked');
-    //         removeInput.checked = false;
-    //     }
-    //     counter++;
-    //     if(counter > 3){
-    //         counter = 1;
-    //     }
-    //     document.getElementById(nextBtn + counter).classList.add('btn-checked');
-    //     document.getElementById('radio' + counter).checked = true;
-    //     console.log(counter)
-    // }, 3000)
+    setInterval(function(){
+        let removeBtn = document.getElementById(nextBtn + counter);
+        let removeInput = document.getElementById('radio' + counter);
+        if(removeBtn.classList.contains('btn-checked')){
+            removeBtn.classList.remove('btn-checked');
+            removeInput.checked = false;
+        }
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+        document.getElementById(nextBtn + counter).classList.add('btn-checked');
+        document.getElementById('radio' + counter).checked = true;
+        console.log(counter)
+    }, 3000)
 
     radioBtn.forEach(function(element){
         element.addEventListener('click', function(){
