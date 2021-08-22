@@ -754,6 +754,9 @@ footer{
     color: #a0a8b5;
     margin-bottom: 30px;
 }
+.footer-top-2 .links li:hover{
+    color: white;
+}
 .footer-top-3{
     padding-left: 130px;
     width: 370px;
